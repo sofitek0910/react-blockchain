@@ -65,7 +65,6 @@ contract CoralToken {
         return true;
     }
     //transfer from. here there are 3 accounts, account B which calls the function, account A which is where we transfer from
-    //and account C which we are transferring to
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         
         // require _from has enough tokens
