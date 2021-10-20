@@ -54,7 +54,6 @@ class App extends Component {
   transfer(recipient, amount) {
     this.state.daiTokenMock.methods.transfer(recipient, amount).send({ from: this.state.account })
   }
-
   constructor(props) {
     super(props)
     this.state = {
