@@ -52,8 +52,6 @@ contract CoralToken {
 
     }
 
-    //Delegated transfer
-
     //Approve (Account A Approving B to spend C amount of tokens on A's behalf)
 
     function approve(address _spender, uint256 _value) public returns (bool success) {
