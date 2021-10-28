@@ -40,6 +40,7 @@ App = {
 	
   },
 
+
   initContracts: function() {
     $.getJSON("../abis/CoralTokenSale.json", function(coralTokenSale) {
       App.contracts.CoralTokenSale = TruffleContract(coralTokenSale);
@@ -80,6 +81,7 @@ listenForEvents: function() {
 		console.log("event triggered", event);
         	App.render();
 	})
+  
      /* instance.Sell({}, {
         fromBlock: 0,
         toBlock: 'latest',
