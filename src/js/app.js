@@ -8,12 +8,10 @@ App = {
   tokensAvailable: 21000000,
 
   init: function() {
-    //console.log("App initialized...")
     return App.initWeb3();
   },
 
   initWeb3: function() {
-	//Web3 "Usage" on github, copy code and paste
 	
 	    let web3;
 	    
@@ -21,7 +19,6 @@ App = {
 		
 		App.web3Provider = window.ethereum;
 		web3 = new Web3(window.ethereum);
-		//can use web3 with Metamask
 		//window.ethereum.enable(); instead of the deprecated ethereum.enable we use the following
 		ethereum.request({method:'eth_requestAccounts'})
 		
